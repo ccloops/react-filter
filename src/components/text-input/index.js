@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+// const InputContainer = 
+
 const TextInput = ({ inputValue, handleChange }) => (
   <input 
     type='text'
