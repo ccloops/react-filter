@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 
 import TextInput from './text-input';
+import Submit from './submit';
 
 export default class App extends Component {
   constructor(props) {
@@ -17,9 +18,16 @@ export default class App extends Component {
     console.log(this.state.inputValue);
   }
 
+  handleInputSubmit(event) {
+
+    // event.preventDefault();
+    console.log(event);
+  }
+
   render() {
     const {
       handleInputChange,
+      handleInputSubmit,
       state: { inputValue },
     } = this;
     return(
@@ -28,6 +36,9 @@ export default class App extends Component {
         <TextInput 
           inputValue={ inputValue }
           handleChange={ handleInputChange }
+        />
+        <Submit 
+          handleSubmit={ handleInputSubmit }
         />
       </Fragment>
     );
