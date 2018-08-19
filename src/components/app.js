@@ -4,11 +4,14 @@ import styled from 'styled-components';
 import TextInput from './text-input';
 import Submit from './submit';
 
+const dogs = ['prince', 'sport', 'mabel'];
+
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       inputValue: '',
+      isSelected: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
   }
@@ -22,6 +25,7 @@ export default class App extends Component {
 
     // event.preventDefault();
     console.log(event);
+
   }
 
   render() {
