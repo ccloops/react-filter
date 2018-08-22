@@ -15,6 +15,7 @@ const TextInput = ({ inputValue, handleChange }) => (
     type='text'
     placeholder='type anything'
     onChange={ handleChange }
+    value={inputValue}
   />
 );
 
