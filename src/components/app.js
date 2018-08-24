@@ -23,7 +23,7 @@ export default class App extends Component {
 
   handleInputSubmit(event) {
     
-    // event.preventDefault();
+    event.preventDefault();
     console.log(event);
 
   }
