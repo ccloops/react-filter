@@ -36,7 +36,7 @@ export default class App extends Component {
     } = this;
     return(
       <Fragment>
-        <h1>Hello World</h1>
+        <h1>CC</h1>
         <TextInput 
           inputValue={ inputValue }
           handleChange={ handleInputChange }
