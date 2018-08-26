@@ -13,7 +13,7 @@ const InputContainer = styled.input`
 const TextInput = ({ inputValue, handleChange }) => (
   <InputContainer 
     type='text'
-    placeholder='type anything'
+    placeholder={ inputValue ? inputValue : 'type anything' }
     onChange={ handleChange }
     value={inputValue}
   />

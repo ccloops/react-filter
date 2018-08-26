@@ -9,12 +9,12 @@ const Button = styled.button`
   color: cornSilk;
 `;
 
-const Submit = ({ handleSubmit }) => (
+const SubmitButton = ({ handleSubmit }) => (
   <Button onClick={ handleSubmit }>Submit</Button>
 );
 
-Submit.propTypes = {
+SubmitButton.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
 };
 
-export default Submit;
+export default SubmitButton;

@@ -1,8 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
+import superagent from 'superagent';
 
 import TextInput from './text-input';
-import Submit from './submit';
+import SubmitButton from './submit-button';
+import DropDown from './drop-down';
 
 const dogs = ['prince', 'sport', 'mabel'];
 
@@ -14,18 +16,16 @@ export default class App extends Component {
       isSelected: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleInputSubmit = this.handleInputSubmit.bind(this);
   }
 
   handleInputChange(event) {
     this.setState({ inputValue: event.target.value });
-    console.log(this.state.inputValue);
   }
 
   handleInputSubmit(event) {
-    
     event.preventDefault();
-    console.log(event);
-
+    this.setState({inputValue: event.target.value});
   }
 
   render() {
@@ -41,7 +41,10 @@ export default class App extends Component {
           inputValue={ inputValue }
           handleChange={ handleInputChange }
         />
-        <Submit 
+        <DropDown dogs={ dogs }
+          inputValue={inputValue}
+        />
+        <SubmitButton 
           handleSubmit={ handleInputSubmit }
         />
       </Fragment>
