@@ -14,6 +14,7 @@ export default class App extends Component {
       isSelected: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleInputSubmit = this.handleInputSubmit.bind(this);
   }
 
   handleInputChange(event) {
@@ -22,9 +23,10 @@ export default class App extends Component {
   }
 
   handleInputSubmit(event) {
-    
     event.preventDefault();
-    console.log(event);
+    this.setState({inputValue: event.target.value});
+    
+    console.log(this.state.inputValue);
 
   }
 
