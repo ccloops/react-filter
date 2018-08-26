@@ -7,6 +7,7 @@ const Button = styled.button`
   padding: 1.9em 3em;
   margin-left: 2em;
   color: cornSilk;
+  width: 80%;
 `;
 
 const SubmitButton = ({ handleSubmit }) => (

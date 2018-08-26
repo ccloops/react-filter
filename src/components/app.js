@@ -1,3 +1,4 @@
+'../main.scss';
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import superagent from 'superagent';
@@ -15,6 +16,7 @@ export default class App extends Component {
       inputValue: '',
       isSelected: false,
     };
+
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleInputSubmit = this.handleInputSubmit.bind(this);
   }
@@ -32,7 +34,7 @@ export default class App extends Component {
     const {
       handleInputChange,
       handleInputSubmit,
-      state: { inputValue },
+      state: { inputValue, isSelected },
     } = this;
     return(
       <Fragment>
@@ -42,7 +44,10 @@ export default class App extends Component {
           handleChange={ handleInputChange }
         />
         <DropDown dogs={ dogs }
-          inputValue={inputValue}
+          inputValue={ inputValue }
+          // isSelected={ isSelected }
+          // className={ isSelected ? 'hide' : 'show' }
+          className='hide'
         />
         <SubmitButton 
           handleSubmit={ handleInputSubmit }
