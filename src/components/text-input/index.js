@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const InputContainer = styled.input`
   height: 3em;
-  width: 15em;
+  width: 80%;
   border: 2px solid black;
   font-size: 1em;
   text-align: center;
@@ -15,7 +15,7 @@ const TextInput = ({ inputValue, handleChange }) => (
     type='text'
     placeholder={ inputValue ? inputValue : 'type anything' }
     onChange={ handleChange }
-    value={inputValue}
+    value={ inputValue }
   />
 );
 
