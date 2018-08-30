@@ -2,7 +2,7 @@
 
 ## Motivation
 
-To create a reusable auto-fill drop down menu component. Will query search results.
+To create a reusable auto-fill drop down menu component. Synced
 
 ## Code Style
 Standard JavaScript with ES6 Syntax.
