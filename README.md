@@ -1,4 +1,4 @@
-# React Filter App
+# React Filter Application
 
 ## Motivation
 
