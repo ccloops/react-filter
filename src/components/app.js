@@ -45,9 +45,9 @@ export default class App extends Component {
         />
         <DropDown dogs={ dogs }
           inputValue={ inputValue }
-          // isSelected={ isSelected }
-          // className={ isSelected ? 'hide' : 'show' }
-          className='hide'
+          isSelected={ isSelected }
+          className={ isSelected ? 'hide' : 'show' }
+          // className='hide'
         />
         <SubmitButton 
           handleSubmit={ handleInputSubmit }
