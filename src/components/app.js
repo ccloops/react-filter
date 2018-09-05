@@ -47,7 +47,6 @@ export default class App extends Component {
           inputValue={ inputValue }
           isSelected={ isSelected }
           className={ isSelected ? 'hide' : 'show' }
-          // className='hide'
         />
         <SubmitButton 
           handleSubmit={ handleInputSubmit }
