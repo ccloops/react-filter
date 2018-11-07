@@ -7,7 +7,7 @@ import TextInput from './text-input';
 import SubmitButton from './submit-button';
 import DropDown from './drop-down';
 
-const dogs = ['prince', 'sport', 'mabel'];
+const dogs = ['prince', 'sport', 'mabel', 'peepee', 'mooshy'];
 
 export default class App extends Component {
   constructor(props) {
